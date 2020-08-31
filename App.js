@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { View, StyleSheet, Text, SafeAreaView } from 'react-native';
 import {Picker} from 'react-native';
 
+
 export default class App extends Component{
 
   constructor(props){
@@ -12,7 +13,8 @@ export default class App extends Component{
         {key: 1, nome: 'Strogonoff', valor: 35.90},
         {key: 2, nome: 'Quatro queijos', valor: 53.90},
         {key: 3, nome: 'Calabresa', valor: 28.90},
-        {key: 4, nome: 'Brigadeiro', valor: 55.90}
+        {key: 4, nome: 'Brigadeiro', valor: 55.90},
+        {key: 5, nome: 'Frango', valor: 45.90}
       ]
     };
   };
@@ -34,7 +36,7 @@ export default class App extends Component{
           >
 
             {pizzasItem}
-            
+
           </Picker>
 
           <Text style={styles.pizzas}>Você escolheu: {this.state.pizzas[this.state.pizza].nome}</Text>
